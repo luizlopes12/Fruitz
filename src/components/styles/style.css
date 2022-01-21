@@ -10,6 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  /* outline: 1px solid red; */
 }
 .logo{
   font-size: 2.2em;
@@ -35,6 +36,34 @@ body {
   border: none;
   background-color: #fff;
 }
+.btn-green{
+  background-color: #6aa103;
+  color: #fff;
+}
+.btn-green:hover{
+  background-color: #578502;
+  color: #fff;
+}
+.cart-container{
+  min-height: 100vh;
+}
+.dev{
+  font-size: 12px;
+}
+.footer p{
+  font-size: 0.9em;
+}
+.footer-socials i{
+  filter: invert(20%);
+  border-radius: 50%;
+  padding: 5px 6px;
+}
+.footer-socials i:hover{
+  cursor: pointer;
+}
+.footer-socials a{
+  color: #313131;
+}
 @media(max-width: 768px){
   .logo{
     font-size: 1.5em;
@@ -45,5 +74,16 @@ body {
   }
   .nutri-info{
     font-size: 12px;
+  }
+  .footer .row{
+    margin-bottom: 10px;
+  }
+  .about{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
+    margin-bottom: 30px;
   }
 }

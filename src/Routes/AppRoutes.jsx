@@ -8,7 +8,7 @@ const AppRoutes = ({
   handleAddProduct,
   handleRemoveProduct,
   handleCartClear,
-  handleRemoveTotalProducts
+  handleRemoveTotalProducts,
 }) => {
   return (
     <div>
