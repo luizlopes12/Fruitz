@@ -14,8 +14,7 @@ const AppRoutes = ({
     <div>
       <Routes>
         <Route
-          path="/home"
-          exact
+          path="/"
           element={
             <Products
               productItems={productItems}
