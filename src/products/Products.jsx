@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
-
+import '../components/styles/style.css'
 const Products = ({ productItems, handleAddProduct }) => {
   const [open, setOpen] = useState({});
   const handleClick = (id) => {
