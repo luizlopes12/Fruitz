@@ -1,9 +1,5 @@
 ## Shopping cart system with fruityvice api
 
-### Links
-  
-- Live Site URL: [https://luizlopes12.github.io/Fruitz/](https://luizlopes12.github.io/Fruitz/)
-
 ## Screenshots
 ### Desktop
 ![Desktop](./desk-screen.png)
