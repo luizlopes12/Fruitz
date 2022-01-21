@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import AppRoutes from "./Routes/AppRoutes";
 import Footer from "./components/Footer";
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(localData);
   /*
   //////////////////
   Não consegui entrar na api por erro de CORS, então peguei os dados pelo postman e coloquei no localData.json
