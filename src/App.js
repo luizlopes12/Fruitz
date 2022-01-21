@@ -6,6 +6,12 @@ import AppRoutes from './Routes/AppRoutes';
 function App() {
   const productItems = teste;
   const [cartItems, setCartItems] = useState([])
+  const handleAddProduct = (product) =>{
+    const productExists = cartItems.find((item) => item.id === product.id)
+    if(productExists){
+      setCartItems(cartItems.map((item) => item.id))
+    }
+  }
   return (
     <div className="App">
       <Router>
