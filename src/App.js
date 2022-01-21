@@ -24,7 +24,7 @@ function App() {
   data.length === 0 && setData(localData);
 
 
-  const productItems = localData;
+  const productItems = data;
   const [cartItems, setCartItems] = useState([]);
   const handleAddProduct = (product) => {
     const productExists = cartItems.find((item) => item.id === product.id);
