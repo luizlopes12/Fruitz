@@ -8,15 +8,20 @@ function App() {
   const [cartItems, setCartItems] = useState([])
   const handleAddProduct = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
-    if(productExists){
-      setCartItems(cartItems.map((item) => item.id))
-    }
+    productExists ?
+      setCartItems(cartItems.map((item) => {item.id === product.id ?
+      {...productExists, quantity: productExists.quantity + 1}: item
+      } 
+      )
+      )
+    :
+      setCartItems([...cartItems, {...product, quantity: 1}])
   }
   return (
     <div className="App">
       <Router>
       <Header/>
-      <AppRoutes productItems={productItems} cartItems={cartItems}/>
+      <AppRoutes productItems={productItems} cartItems={cartItems} handleAddProduct={handleAddProduct}/>
       </Router>
     </div>
   );

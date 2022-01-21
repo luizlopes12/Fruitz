@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Products = ({productItems}) => {
+const Products = ({productItems, handleAddProduct}) => {
   return (
     <div>
         {productItems.map((productItem, key)=>{
