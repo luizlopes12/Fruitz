@@ -44,7 +44,7 @@ body {
   background-color: #578502;
   color: #fff;
 }
-.cart-container{
+.cart-container, .products-container{
   min-height: 100vh;
 }
 .dev{

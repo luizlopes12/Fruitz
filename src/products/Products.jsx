@@ -7,7 +7,7 @@ const Products = ({ productItems, handleAddProduct }) => {
     setOpen((open) => ({ ...open, [id]: !open[id] }));
   };
   return (
-    <div className="container mb-5">
+    <div className="container mb-5 products-container">
       <div className="row d-flex justify-content-center">
         {productItems.map((item) => {
           return (
