@@ -44,11 +44,14 @@ body {
   background-color: #578502;
   color: #fff;
 }
-.cart-container, .products-container{
+.cart-container{
   min-height: 100vh;
 }
 .dev{
   font-size: 12px;
+}
+.products{
+  min-height: 100vh;
 }
 .footer p{
   font-size: 0.9em;
