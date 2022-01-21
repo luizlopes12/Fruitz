@@ -17,7 +17,6 @@ function App() {
   }
   const handleRemoveProduct = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
-
   }
   return (
     <div className="App">
