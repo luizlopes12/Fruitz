@@ -8,14 +8,16 @@ function App() {
   const [cartItems, setCartItems] = useState([])
   const handleAddProduct = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
+
     productExists ?
-      setCartItems(cartItems.map((item) => {item.id === product.id ?
-      {...productExists, quantity: productExists.quantity + 1}: item
-      } 
-      )
-      )
+      setCartItems(cartItems.map((item, key) => (item.id === product.id ?
+      {...productExists, quantity: productExists.quantity + 1}: item)))
     :
       setCartItems([...cartItems, {...product, quantity: 1}])
+  }
+  const handleRemoveProduct = (product) =>{
+    const productExists = cartItems.find((item) => item.id === product.id)
+
   }
   return (
     <div className="App">

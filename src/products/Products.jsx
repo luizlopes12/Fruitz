@@ -5,10 +5,10 @@ const Products = ({productItems, handleAddProduct}) => {
     <div>
         {productItems.map((productItem, key)=>{
           return(
-          <div>
+          <div key={key}>
                 {productItem.name}
                 <div>
-                  <button onClick={handleAddProduct(productItem)}> add to cart </button>
+                  <button onClick={()=>handleAddProduct(productItem)}> add to cart </button>
                 </div>
             </div>
             
