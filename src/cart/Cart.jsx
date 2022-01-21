@@ -17,7 +17,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
               {cartItems.length >= 1 &&
               <div className="row d-flex justify-content-end">
                 <div className="col-sm-2 d-flex justify-content-end">
-                <button className='btn btn-success mt-1 mb-3' onClick={()=>handleCartClear()}>Clear cart</button>
+                <button className='btn btn-success mt-1 mb-2' onClick={()=>handleCartClear()}>Clear cart</button>
                 </div>
               </div>
               }

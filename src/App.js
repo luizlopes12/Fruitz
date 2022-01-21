@@ -1,10 +1,22 @@
-import React,{useState} from 'react';
-import teste from './services/api/teste.json';
+import React,{useState, useEffect} from 'react';
+import Api from './services/api/api';
+import localData from './services/api/localData.json'
 import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header';
 import AppRoutes from './Routes/AppRoutes';
+import Footer from './components/Footer'
 function App() {
-  const productItems = teste;
+  const [data, setData] = useState([]);
+  useEffect(()=>{
+      Api.get('/api/fruit/all')
+        .then((response)=>{
+          setData(response)
+    }).catch((error)=>{
+        console.log(error)
+      })
+  }, [])
+  data.length === 0 && setData(localData)
+  const productItems = data;
   const [cartItems, setCartItems] = useState([])
   const handleAddProduct = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
@@ -43,6 +55,7 @@ function App() {
         handleCartClear={handleCartClear}
         />
       </Router>
+      <Footer/>
     </div>
   );
 }
