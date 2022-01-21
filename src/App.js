@@ -6,6 +6,12 @@ import Header from "./components/Header";
 import AppRoutes from "./Routes/AppRoutes";
 import Footer from "./components/Footer";
 function App() {
+  /*
+  ////////////////////////////////////////////////////
+  Não consegui dar get na api, só dava erro de CORS, tentei com o herokuapp tbm mas só resultou em erro 403(Forbidden)
+  Então fiz a requisição no postman e coloquei no arquivo localData.json
+  ////////////////////////////////////////////////////
+  */
   const [data, setData] = useState([]);
     useEffect(() => {
     Api.get("/api/fruit/all")
