@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Router>
       <Header/>
-      <AppRoutes productItems={productItems}/>
+      <AppRoutes productItems={productItems} cartItems={cartItems}/>
       </Router>
     </div>
   );

@@ -8,7 +8,7 @@ const Products = ({productItems}) => {
           <div>
                 {productItem.name}
                 <div>
-                  <button> add to cart </button>
+                  <button onClick={handleAddProduct(productItem)}> add to cart </button>
                 </div>
             </div>
             
