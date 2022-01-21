@@ -3,18 +3,19 @@ import React from 'react';
 const Products = ({productItems, handleAddProduct}) => {
   return (
     <div>
-        {productItems.map((productItem, key)=>{
+        { productItems.map((item, key)=>{
           return(
           <div key={key}>
-                {productItem.name}
+                {item.name}
                 <div>
-                  <button onClick={()=>handleAddProduct(productItem)}> add to cart </button>
+                  <button onClick={()=>handleAddProduct(item)}> add to cart </button>
                 </div>
             </div>
             
           )
             
-        })}
+        })
+      }
     </div>
 
   );

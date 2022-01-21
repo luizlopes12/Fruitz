@@ -25,14 +25,12 @@ function App() {
   const handleCartClear = () =>{
     setCartItems([])
   }
-  const [searchText, setSearchText] = useState()
+  
   return (
     <div className="App">
       <Router>
       <Header cartItems={cartItems}/>
       <AppRoutes 
-        searchText={searchText}
-        setSearchText={setSearchText}
         productItems={productItems} 
         cartItems={cartItems} 
         handleAddProduct={handleAddProduct}

@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/style.css";
 function Header({ cartItems }) {
 
-const [searchText, setSearchText] = useState()
   return (
     <div className="header container-fluid bg-light">
       <nav className="container navbar navbar-light bg-light">
@@ -14,7 +13,6 @@ const [searchText, setSearchText] = useState()
             <span>Fruitz</span>
           </Link>
           <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={search}/>
             <Link to="/cart" className="btn btn-sm btn-success fs-5">
               Cart
               <span>
