@@ -2,7 +2,7 @@
   "name": "fruitz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luizlopes12.github.io/Fruitz/",
+  "homepage": "https://luizlopes12.github.io/Fruitz/cart",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
