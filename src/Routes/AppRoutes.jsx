@@ -7,7 +7,8 @@ const AppRoutes = ({
   cartItems,
   handleAddProduct,
   handleRemoveProduct,
-  handleCartClear
+  handleCartClear,
+  handleRemoveTotalProducts
 }) => {
   return (
     <div>
@@ -30,6 +31,7 @@ const AppRoutes = ({
               cartItems={cartItems}
               handleAddProduct={handleAddProduct}
               handleRemoveProduct={handleRemoveProduct}
+              handleRemoveTotalProducts={handleRemoveTotalProducts}
               handleCartClear={handleCartClear}
             />
           }

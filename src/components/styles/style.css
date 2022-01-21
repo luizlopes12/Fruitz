@@ -21,3 +21,29 @@ body {
 .logo span{
   color: #86bb22;
 }
+.example-img{
+  height: 180px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nutri-info{
+  font-size: 14px;
+}
+.showinfo-btn{
+  border: none;
+  background-color: #fff;
+}
+@media(max-width: 768px){
+  .logo{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .logo img{
+    height: 50px;
+  }
+  .nutri-info{
+    font-size: 12px;
+  }
+}

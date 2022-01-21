@@ -22,10 +22,17 @@ function App() {
     :
     setCartItems(cartItems.map((item) => item.id === product.id ? {...productExists, quantity: productExists.quantity - 1} : item))
   }
+  const handleRemoveTotalProducts = (product) =>{
+    const productExists = cartItems.find((item) => item.id === product.id)
+    productExists.quantity === 1 ?
+    setCartItems(cartItems.filter((item) => item.id !== product.id))
+    :
+    setCartItems(cartItems.map((item) => item.id === product.id ? {...productExists, quantity: productExists.quantity = 0} : item))
+  }
   const handleCartClear = () =>{
     setCartItems([])
   }
-  
+
   return (
     <div className="App">
       <Router>
@@ -35,6 +42,7 @@ function App() {
         cartItems={cartItems} 
         handleAddProduct={handleAddProduct}
         handleRemoveProduct={handleRemoveProduct}
+        handleRemoveTotalProducts={handleRemoveTotalProducts}
         handleCartClear={handleCartClear}
         />
       </Router>
