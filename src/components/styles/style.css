@@ -11,3 +11,13 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+.logo{
+  font-size: 2.2em;
+  font-weight: 600;
+}
+.logo img{
+  height: 60px;
+}
+.logo span{
+  color: #86bb22;
+}
