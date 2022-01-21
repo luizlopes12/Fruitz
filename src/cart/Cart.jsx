@@ -16,19 +16,19 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
           <div>
               {cartItems.length >= 1 &&
               <div className="row d-flex justify-content-end">
-                <div className="col-sm-2">
-                <button className='btn btn-success mt-3' onClick={()=>handleCartClear()}>Clear cart</button>
+                <div className="col-sm-2 d-flex justify-content-end">
+                <button className='btn btn-success mt-1 mb-3' onClick={()=>handleCartClear()}>Clear cart</button>
                 </div>
               </div>
               }
           </div>
-          <div className="row">
+          <div className="row d-flex justify-content-start">
           {cartItems.map((item, key)=>(
-              <div key={key} className="col-sm-3 col-12 text-center">
+              <div key={key} className="col-lg-3 col-md-4 col-12 text-center">
                 <div className="card my-3">
-                <div className="exemplo-img"></div>
+                <div className="example-img">Item image</div>
                 <div className="card-body">
-                    <button className="btn btn-outline-danger position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-0 fs-2" 
+                    <button className="remove-btn btn btn-outline-danger position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-0 fs-2" 
                     onClick={()=>handleRemoveTotalProducts(item)}>
                         <i class="bi bi-x"></i>
                     </button>

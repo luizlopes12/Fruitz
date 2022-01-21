@@ -7,7 +7,7 @@ function Header({ cartItems }) {
 
   return (
     <div className="header container-fluid bg-light">
-      <nav className="container navbar navbar-light bg-light p-0">
+      <nav className="container navbar navbar-light bg-light p-0 pt-2">
         <div className="container-fluid ">
           <Link to="/" className="navbar-brand logo py-0">
             <img className='pb-2' src={require('../img/logo.png')} alt="Logo Frexco"/>

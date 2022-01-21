@@ -8,10 +8,10 @@ const Products = ({ productItems, handleAddProduct }) => {
   } 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         {productItems.map((item, key) => {
           return (
-            <div key={item.id} className="col-sm-3 col-12 text-center">
+            <div key={item.id} className="col-lg-3 col-md-4 col-12 text-center">
               <div className="card my-3">
                 <div className="example-img">Item image</div>
                 <div className="card-body">

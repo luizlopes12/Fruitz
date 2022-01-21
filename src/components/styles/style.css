@@ -23,7 +23,7 @@ body {
 }
 .example-img{
   height: 180px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(232, 232, 232);
   display: flex;
   justify-content: center;
   align-items: center;

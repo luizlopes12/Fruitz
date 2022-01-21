@@ -1,6 +1,6 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import teste from './services/api/teste.json';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header';
 import AppRoutes from './Routes/AppRoutes';
 function App() {
@@ -8,7 +8,6 @@ function App() {
   const [cartItems, setCartItems] = useState([])
   const handleAddProduct = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
-
     productExists ?
       setCartItems(cartItems.map((item, key) => (item.id === product.id ?
       {...productExists, quantity: productExists.quantity + 1}: item)))
@@ -24,10 +23,8 @@ function App() {
   }
   const handleRemoveTotalProducts = (product) =>{
     const productExists = cartItems.find((item) => item.id === product.id)
-    productExists.quantity === 1 ?
+    productExists.quantity >= 0 &&
     setCartItems(cartItems.filter((item) => item.id !== product.id))
-    :
-    setCartItems(cartItems.map((item) => item.id === product.id ? {...productExists, quantity: productExists.quantity = 0} : item))
   }
   const handleCartClear = () =>{
     setCartItems([])
