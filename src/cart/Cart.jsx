@@ -17,7 +17,7 @@ const Cart = ({
       {cartItems.length === 0 && (
         <div className="text-center mt-5">
           No items added to cart <br />
-          <Link to="/" className="btn btn-success">
+          <Link to="/home" className="btn btn-success">
             See items to add
           </Link>
         </div>

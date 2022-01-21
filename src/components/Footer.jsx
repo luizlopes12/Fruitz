@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="bg-light">
           <nav className="container bg-light p-0 pt-4">
             <div className="container-fluid ">
-              <Link to="/" className="navbar-brand logo py-0">
+              <Link to="/home" className="navbar-brand logo py-0">
                 <img
                   className="pb-2"
                   src={require("../img/logo.png")}
