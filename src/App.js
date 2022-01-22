@@ -5,6 +5,12 @@ import Header from "./components/Header";
 import AppRoutes from "./Routes/AppRoutes";
 import Footer from "./components/Footer";
 function App() {
+
+  /*
+  //////////////////////////////
+    Calling data from api
+  //////////////////////////////
+  */
   const [data, setData] = useState([]);
     useEffect(() => {
       const url = 'https://www.fruityvice.com/api/fruit/all'
@@ -14,6 +20,9 @@ function App() {
       }).catch(error => console.log(error))
   }, []);
   const productItems = data;
+  /*
+  ///////////////////////////////
+  */
   const [cartItems, setCartItems] = useState([]);
   const handleAddProduct = (product) => {
     const productExists = cartItems.find((item) => item.id === product.id);
