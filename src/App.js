@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
-import getData from "./services/api/api";
-import localData from './services/api/localData.json'
+import axios from 'axios';
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import AppRoutes from "./Routes/AppRoutes";
 import Footer from "./components/Footer";
 function App() {
-  /*
-  ////////////////////////////////////////////////////
-  Não consegui dar get na api, só da erro de CORS(No 'Access-Control-Allow-Origin' header is present on the requested resource), 
-  tentei com o herokuapp tbm mas só resultou em erro 403(Forbidden)
-  Então fiz a requisição no postman e coloquei no arquivo localData.json
-  ////////////////////////////////////////////////////
-  */
   const [data, setData] = useState([]);
     useEffect(() => {
-      getData()
+      const url = 'https://www.fruityvice.com/api/fruit/all'
+      axios.get(url)
+      .then(response =>{
+          setData(response.data)
+      }).catch(error => console.log(error))
   }, []);
-  data.length == 0 && setData(localData)
   const productItems = data;
   const [cartItems, setCartItems] = useState([]);
   const handleAddProduct = (product) => {

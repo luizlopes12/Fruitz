@@ -3,9 +3,7 @@ const url = 'https://www.fruityvice.com/api/fruit/all'
 const getData = () =>{
     axios.get(url)
     .then(response =>{
-    return(
-        response
-        )
+        return(response.data)
     }).catch(error => console.log(error))
 }
 
