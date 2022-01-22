@@ -39,6 +39,7 @@ body {
 .btn-green{
   background-color: #238636;
   color: #fff;
+  transition: all .2s ease-in-out;
 }
 .btn-green:hover{
   background-color: #217430;
