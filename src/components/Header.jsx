@@ -19,7 +19,7 @@ function Header({ cartItems }) {
           <form className="d-flex">
             <Link
               to="/cart"
-              className="btn btn-sm btn-success btn position-relative fs-5 px-2 py-0"
+              className="btn btn-sm btn-green btn position-relative fs-5 px-2 py-0"
             >
               <i className="bi bi-cart"></i>
               <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger px-2 py-1">

@@ -51,7 +51,7 @@ const Products = ({ productItems, handleAddProduct }) => {
                   <p className="mt-2">
                     <button
                       onClick={() => handleAddProduct(item)}
-                      className="btn btn-success"
+                      className="btn btn-green"
                     >
                       Add to cart
                     </button>
