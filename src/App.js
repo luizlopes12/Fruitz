@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Api from "./services/api/api";
+import getData from "./services/api/api";
 import localData from './services/api/localData.json'
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
@@ -8,19 +8,14 @@ import Footer from "./components/Footer";
 function App() {
   /*
   ////////////////////////////////////////////////////
-  Não consegui dar get na api, só dava erro de CORS, tentei com o herokuapp tbm mas só resultou em erro 403(Forbidden)
+  Não consegui dar get na api, só da erro de CORS(No 'Access-Control-Allow-Origin' header is present on the requested resource), 
+  tentei com o herokuapp tbm mas só resultou em erro 403(Forbidden)
   Então fiz a requisição no postman e coloquei no arquivo localData.json
   ////////////////////////////////////////////////////
   */
   const [data, setData] = useState([]);
     useEffect(() => {
-    Api.get("/api/fruit/all")
-      .then((response) => {
-        setData(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      getData()
   }, []);
   data.length == 0 && setData(localData)
   const productItems = data;
