@@ -4,15 +4,10 @@ const getData = () =>{
     axios.get(url)
     .then(response =>{
     return(
-        response
+        response.headers
         )
     }).catch(error => console.log(error))
 }
 
 
 export default getData;
-
-// const Api = axios.create({
-//     baseURL: 'https://www.fruityvice.com',
-// })
-// export default Api;
