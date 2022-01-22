@@ -4,7 +4,7 @@ const getData = () =>{
     axios.get(url)
     .then(response =>{
     return(
-        response.headers
+        response
         )
     }).catch(error => console.log(error))
 }
