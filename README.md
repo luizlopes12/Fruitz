@@ -1,9 +1,15 @@
 ## Shopping cart system with fruityvice api
 
+## Gifs
+#### Desktop
+![Desktop](./gif-desktop.gif)
+#### Mobile
+![Mobile](./gif-mobile.gif)
+
 ## Screenshots
-### Desktop
+#### Desktop
 ![Desktop](./desk-screen.png)
-### Mobile
+#### Mobile
 ![Mobile](./mobile-screen.png)
 
 ### Built with
