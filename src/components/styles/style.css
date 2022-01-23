@@ -22,6 +22,9 @@ body {
 .logo span{
   color: #86bb22;
 }
+.card-body{
+  padding-bottom: 0;
+} 
 .example-img{
   height: 180px;
   background-color: rgb(232, 232, 232);
@@ -76,8 +79,17 @@ body {
   .logo img{
     height: 50px;
   }
+  .example-img{
+    height: 140px;
+  }
   .nutri-info{
-    font-size: 12px;
+    font-size: 70%;
+  }
+  .cartcards{
+    padding: 0 10px;
+  }
+  .add{
+    font-size: 90%;
   }
   .footer .row{
     margin-bottom: 10px;

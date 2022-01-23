@@ -38,7 +38,7 @@ const Cart = ({
       </div>
       <div className="row d-flex justify-content-start">
         {cartItems.map((item, key) => (
-          <div key={key} className="col-lg-3 col-md-4 col-12 text-center">
+          <div key={key} className="col-lg-3 col-md-4 col-6 text-center cartcards">
             <div className="card my-3">
               <div className="example-img">Item image</div>
               <div className="card-body">
@@ -81,14 +81,14 @@ const Cart = ({
                   </div>
                 </Collapse>
               </div>
-              <div className="d-flex justify-content-center mb-4">
+              <div className="d-flex justify-content-center mb-3">
                 <button
                   className="btn btn-success fw-bolder px-3"
                   onClick={() => handleAddProduct(item)}
                 >
                   +
                 </button>
-                <div className="rounded border d-flex align-items-center px-4">
+                <div className="rounded border d-flex align-items-center px-3">
                   {item.quantity}
                 </div>
                 <button

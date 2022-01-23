@@ -8,10 +8,10 @@ const Products = ({ productItems, handleAddProduct }) => {
   };
   return (
     <div className="container mb-5 products">
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-between">
         {productItems.map((item) => {
           return (
-            <div key={item.id} className="col-lg-3 col-md-4 col-12 text-center">
+            <div key={item.id} className="col-lg-3 col-md-4 col-6 text-center">
               <div className="card my-3">
                 <div className="example-img">Item image</div>
                 <div className="card-body">
@@ -51,7 +51,7 @@ const Products = ({ productItems, handleAddProduct }) => {
                   <p className="mt-2">
                     <button
                       onClick={() => handleAddProduct(item)}
-                      className="btn btn-green"
+                      className="btn btn-green add"
                     >
                       Add to cart
                     </button>
