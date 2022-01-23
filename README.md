@@ -1,4 +1,4 @@
-## Shopping cart system with fruityvice api
+## Shopping cart system with fruityvice API
 
 ## Gifs
 #### Desktop
