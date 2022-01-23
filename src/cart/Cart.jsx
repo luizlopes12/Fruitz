@@ -50,7 +50,7 @@ const Cart = ({
                 </button>
                 <h5 className="card-title fs-6">{item.name}</h5>
                 <button
-                  className="showinfo-btn"
+                  className="showinfo-btn pb-2"
                   onClick={() => handleClick(item.id)}
                 >
                   More info<i className="bi bi-caret-down-fill"></i>
