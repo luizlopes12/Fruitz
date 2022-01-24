@@ -62,20 +62,20 @@ const Cart = ({
                     className="collapsedText"
                   >
                     <ul className="list-group list-group-flush nutri-info">
-                      <li className="list-group-item text-start py-1 px-2">
-                        carbohydrates: {item.nutritions.carbohydrates}
+                      <li className="list-group-item text-start d-flex justify-content-between py-1 px-2">
+                        carbohydrates: <span>{item.nutritions.carbohydrates}</span>
                       </li>
-                      <li className="list-group-item text-start py-1 px-2">
-                        protein: {item.nutritions.protein}
+                      <li className="list-group-item text-start d-flex justify-content-between py-1 px-2">
+                        protein: <span>{item.nutritions.protein}</span>
                       </li>
-                      <li className="list-group-item text-start py-1 px-2">
-                        fat: {item.nutritions.fat}
+                      <li className="list-group-item text-start d-flex justify-content-between py-1 px-2">
+                        fat: <span>{item.nutritions.fat}</span>
                       </li>
-                      <li className="list-group-item text-start py-1 px-2">
-                        calories: {item.nutritions.calories}
+                      <li className="list-group-item text-start d-flex justify-content-between py-1 px-2">
+                        calories: <span>{item.nutritions.calories}</span>
                       </li>
-                      <li className="list-group-item text-start py-1 px-2">
-                        sugar: {item.nutritions.sugar}
+                      <li className="list-group-item text-start d-flex justify-content-between py-1 px-2">
+                        sugar: <span>{item.nutritions.sugar}</span>
                       </li>
                     </ul>
                   </div>
